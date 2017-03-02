@@ -12,7 +12,6 @@
 		nav#menu {
 			background: #0404B4;
 		}
-		
 		body {
 			background-color: #000000;
 			color: rgba(0, 0, 0, 1);
