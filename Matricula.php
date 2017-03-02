@@ -2,94 +2,100 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Sistema de Gestão Escolar </title>
-<style>
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-nav#menu {
-	background: #0404B4;
-}
-body {
-	   background-color: #000000;
-	   color: rgba(0,0,0,1);
-		background: url (_imagens/10.jpg) no-repeat center top fixed;
-		-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	   }
-div#interface {
-	width:750px;
-	background-color: #CEF6F5;
-	margin: -10px auto 0px auto;
-	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-	padding: 10px;
-}
-form {
-	width: 500px;
-	margin: auto;
-}
-
-input {
-	font-family: sans-serif;
-	font-weight: normal;
-	font-size: 13pt;
-	background-color: rgba(255,255,255,.8)
-}
-
-input:hover {
-	background-color: #dddddd;
-}
-
-legend {
-	color: #000000;
-	font-weight: bold;
-	font-size: 13pt;
-	font-family: sans-serif;
-}
-fieldset {
-	border-color: #000000;
-	margin: 20px;
-}
-fieldset#sexo {
-	width: 150px;
-}
-</style>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="icon" type="image/png" href="_imagens/sge.png"  size="16x16" maxlength="8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Sistema de Gestão Escolar </title>
+	<style>
+		@charset "UTF-8";
+		@import url('https://fonts.googleapis.com/css?family=Montserrat');
+		nav#menu {
+			background: #0404B4;
+		}
+		
+		body {
+			background-color: #000000;
+			color: rgba(0, 0, 0, 1);
+			background: url (_imagens/10.jpg) no-repeat center top fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		
+		div#interface {
+			width: 750px;
+			background-color: #CEF6F5;
+			margin: -10px auto 0px auto;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+			padding: 10px;
+		}
+		
+		form {
+			width: 500px;
+			margin: auto;
+		}
+		
+		input {
+			font-family: sans-serif;
+			font-weight: normal;
+			font-size: 13pt;
+			background-color: rgba(255, 255, 255, .8)
+		}
+		
+		input:hover {
+			background-color: #dddddd;
+		}
+		
+		legend {
+			color: #000000;
+			font-weight: bold;
+			font-size: 13pt;
+			font-family: sans-serif;
+		}
+		
+		fieldset {
+			border-color: #000000;
+			margin: 20px;
+		}
+		
+		fieldset#sexo {
+			width: 150px;
+		}
+	</style>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="_imagens/sge.png" size="16x16" maxlength="8" />
 </head>
 
 <body background="_imagens/10.jpg">
-<div id="interface">
-<nav class="navbar navbar-inverse" id="menu">
-  <div class="container-fluid">
-       <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	<div id="interface">
+		<nav class="navbar navbar-inverse" id="menu">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">SGE</a>
-    </div>
+					<a class="navbar-brand" href="index.php">SGE</a>
+				</div>
 
-    
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
-		<li><a href="Matricula.php">Cadastrar Aluno</a></li>
-		<li><a href="GridAlunos.php">Listar Alunos</a></li>
-        </ul>
-  </div>
-  </div>
-</nav>
 
-<form name="Cadastro" action = "InserirAluno.php" method="POST">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
+						<li><a href="Matricula.php">Cadastrar Aluno</a></li>
+						<li><a href="GridAlunos.php">Listar Alunos</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-<center><h1 style="font-family: 'Montserrat', sans-serif;">Cadastrar Aluno<h1></center><br />
+		<form name="Cadastro" action="InserirAluno.php" method="POST">
+
+			<center>
+				<h1 style="font-family: 'Montserrat', sans-serif;">Cadastrar Aluno<h1></center><br />
 <br />
 
 <fieldset id="usuario"><legend>Identificação do Usuário</legend>
